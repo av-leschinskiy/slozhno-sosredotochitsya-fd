@@ -144,6 +144,8 @@
 
 .section-heading {
   color: var(--section-title-color, rgb(255 0 112));
+  font-size: var(--body-text-size, 1.125rem);
+  line-height: var(--body-line-height, 23.4px);
   margin-block-end: 20px;
 }
 
