@@ -1,16 +1,18 @@
 {
-  "plugins": [
-    "stylelint-order"
-  ],
-  "extends": [
-    "stylelint-config-idiomatic-order"
-  ],
+  "plugins": ["stylelint-order"],
+  "extends": ["stylelint-config-idiomatic-order"],
   "rules": {
     "color-no-invalid-hex": true,
     "value-keyword-case": [
       "lower",
       {
         "camelCaseSvgKeywords": true
+      }
+    ],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "ignore": ["inside-block"]
       }
     ],
     "property-no-unknown": true,
@@ -33,7 +35,6 @@
     "declaration-block-single-line-max-declarations": 1,
     "no-unknown-animations": true,
     "selector-type-case": "lower",
-    "rule-empty-line-before": "always",
     "at-rule-empty-line-before": "always",
     "selector-class-pattern": null
   }

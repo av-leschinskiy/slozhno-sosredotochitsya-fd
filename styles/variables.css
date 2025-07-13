@@ -2,3 +2,51 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Цвета */
+  --primary-color: rgb(255 0 112);
+  --border-accent-color: rgb(255 0 112);
+  --hero-title-color: #db00ff;
+  --text-color: #f1b2ce;
+  --section-title-color: rgb(255 0 112);
+  --control-color: rgb(255 0 112);
+  --hover-outline-color: rgb(255 0 112 / 0.4);
+
+  /* Шрифты и размеры текста */
+  --primary-font: "IBM Plex mono";
+  --body-text-size: 1.125rem;
+  --body-line-height: 23.4px;
+  --hero-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --hero-title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
+
+  /* Отступы и расстояния */
+  --layout-spacing: 10px;
+  --content-spacing: 40px;
+  --article-gap: 50px;
+  --grid-gap: 10px;
+  --content-gap: 20px;
+  --heading-width-tablet: 236px;
+  --heading-width-desktop: 315px;
+
+  /* Медиа */
+  --background-image: url(../images/cover-image-dark.png);
+}
+
+@media (min-width: 768px) {
+  :root {
+    /* Шрифты и размеры текста */
+    --hero-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --hero-title-line-height: clamp(
+      6.1875rem,
+      0.4631rem + 11.9258vw,
+      8.095625rem
+    );
+
+    /* Отступы и расстояния */
+    --layout-spacing: 20px;
+    --content-spacing: 60px;
+    --article-gap: 80px;
+    --grid-gap: 20px;
+  }
+}
