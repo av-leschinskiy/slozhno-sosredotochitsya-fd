@@ -11,7 +11,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: var(--primary-font, "IBM Plex mono"), sans-serif;
+  font-family: var(--primary-font, "IBM Plex mono"), monospace, sans-serif;
   font-size: var(--body-text-size, 1.125rem);
 }
 
@@ -66,7 +66,7 @@
   padding: var(--layout-spacing);
   block-size: 100vh;
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: min-content;
+  min-block-size: 668px;
 }
 
 .header__theme-menu {
@@ -95,6 +95,7 @@
 
 .header__theme-menu-button_active {
   border: 1px var(--control-color, rgb(255 0 112)) solid;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -162,6 +163,7 @@
 }
 
 .topic-title {
+  font-size: var(--body-text-size, 1.125rem);
   margin-block-end: 10px;
 }
 
@@ -171,7 +173,7 @@
 }
 
 .reference-link:hover {
-  border-bottom: 1px var(--text-color) solid;
+  border-bottom: 1px currentColor solid;
 }
 
 .reference-link:focus {
@@ -179,7 +181,7 @@
 }
 
 .reference-link:focus-visible {
-  outline: 1px var(--text-color) solid;
+  outline: 1px currentColor solid;
 }
 
 .description-text:not(:last-child) {
@@ -191,10 +193,12 @@
 }
 
 .article-heading {
-  margin-block-end: 20px;
+  font-size: var(--body-text-size, 1.125rem);
+  margin-block-end: 19px;
 }
 
 .gallery-heading {
+  font-size: var(--body-text-size, 1.125rem);
   margin-block-end: var(--layout-spacing);
 }
 
@@ -217,6 +221,7 @@
   align-items: center;
   padding: var(--layout-spacing);
   block-size: 100vh;
+  min-block-size: 668px;
   grid-template-columns: 1fr;
   text-align: center;
 }
@@ -229,7 +234,8 @@
     width: calc((100% - var(--layout-spacing)) / 2);
     justify-self: end;
   }
-  .article-block.two-column {
+  .article-block.problems,
+  .article-block.solutions {
     display: grid;
     gap: var(--content-gap);
     grid-template-columns: min-content 1fr;
@@ -279,7 +285,7 @@
   .section-heading {
     width: var(--heading-width-desktop);
   }
-  .article-block.multi-column .topic-list {
+  .article-block.factors .topic-list {
     display: grid;
     gap: var(--content-gap);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

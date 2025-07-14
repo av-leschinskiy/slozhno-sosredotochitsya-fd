@@ -4,50 +4,35 @@
   переключая тему
 */
 
-/* Группа переменных для светлой темы */
-
-:root {
-  --light-bg-color: #fff1f7;
-  --light-background-image: url(../images/cover-image-light.png);
-  --light-title-decor-color: #353430;
-  --light-section-title-color: #353430;
-  --light-primary-color: #ff8dcb;
-  --light-hero-title-color: #ffc2e6;
-  --light-text-color: #353430;
-  --light-border-accent-color: #353430;
-  --light-hover-outline-color: rgba(50 49 45/ 0.4);
-  --light-control-color: #353430;
-}
-
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-color: var(--light-bg-color);
-  --background-image: var(--light-background-image);
-  --title-decor-color: var(--light-title-decor-color);
-  --section-title-color: var(--light-section-title-color);
-  --primary-color: var(--light-primary-color);
-  --hero-title-color: var(--light-hero-title-color);
-  --text-color: var(--light-text-color);
-  --border-accent-color: var(--light-border-accent-color);
-  --hover-outline-color: var(--light-hover-outline-color);
-  --control-color: var(--light-control-color);
+  --bg-color: #fff1f7;
+  --background-image: url(../images/cover-image-light.png);
+  --title-decor-color: #353430;
+  --section-title-color: #353430;
+  --primary-color: #ff8dcb;
+  --hero-title-color: #ffc2e6;
+  --text-color: #353430;
+  --border-accent-color: #353430;
+  --hover-outline-color: rgba(50 49 45/ 0.4);
+  --control-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: var(--light-bg-color);
-    --background-image: var(--light-background-image);
-    --title-decor-color: var(--light-title-decor-color);
-    --section-title-color: var(--light-section-title-color);
-    --primary-color: var(--light-primary-color);
-    --hero-title-color: var(--light-hero-title-color);
-    --text-color: var(--light-text-color);
-    --border-accent-color: var(--light-border-accent-color);
-    --hover-outline-color: var(--light-hover-outline-color);
-    --control-color: var(--light-control-color);
+    --bg-color: #fff1f7;
+    --background-image: url(../images/cover-image-light.png);
+    --title-decor-color: #353430;
+    --section-title-color: #353430;
+    --primary-color: #ff8dcb;
+    --hero-title-color: #ffc2e6;
+    --text-color: #353430;
+    --border-accent-color: #353430;
+    --hover-outline-color: rgba(50 49 45/ 0.4);
+    --control-color: #353430;
   }
   .header__recording-label {
     display: none;

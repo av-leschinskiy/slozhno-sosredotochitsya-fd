@@ -4,48 +4,35 @@
   переключая тему
 */
 
-:root {
-  --dark-bg-color: #000028;
-  --dark-title-decor-color: #000028;
-  --dark-section-title-color: rgb(255 0 112);
-  --dark-background-image: url(../images/cover-image-dark.png);
-  --dark-primary-color: rgb(255 0 112);
-  --dark-hero-title-color: #db00ff;
-  --dark-text-color: #f1b2ce;
-  --dark-hover-outline-color: rgb(255 0 112 / 0.4);
-  --dark-border-accent-color: rgb(255 0 112);
-  --dark-control-color: rgb(255 0 112);
-}
-
 :root.theme-dark {
   /* сохраните этот селектор в приведённом виде.
   Так стили написанные ниже будут иметь больший вес,
   чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-color: var(--dark-bg-color);
-  --title-decor-color: var(--dark-title-decor-color);
-  --section-title-color: var(--dark-section-title-color);
-  --background-image: var(--dark-background-image);
-  --primary-color: var(--dark-primary-color);
-  --hero-title-color: var(--dark-hero-title-color);
-  --text-color: var(--dark-text-color);
-  --hover-outline-color: var(--dark-hover-outline-color);
-  --border-accent-color: var(--dark-border-accent-color);
-  --control-color: var(--dark-control-color);
+  --bg-color: #000028;
+  --title-decor-color: #000028;
+  --section-title-color: rgb(255 0 112);
+  --background-image: url(../images/cover-image-dark.png);
+  --primary-color: rgb(255 0 112);
+  --hero-title-color: #db00ff;
+  --text-color: #f1b2ce;
+  --hover-outline-color: rgb(255 0 112 / 0.4);
+  --border-accent-color: rgb(255 0 112);
+  --control-color: rgb(255 0 112);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: var(--dark-bg-color);
-    --title-decor-color: var(--dark-title-decor-color);
-    --section-title-color: var(--dark-section-title-color);
-    --background-image: var(--dark-background-image);
-    --primary-color: var(--dark-primary-color);
-    --hero-title-color: var(--dark-hero-title-color);
-    --text-color: var(--dark-text-color);
-    --hover-outline-color: var(--dark-hover-outline-color);
-    --border-accent-color: var(--dark-border-accent-color);
-    --control-color: var(--dark-control-color);
+    --bg-color: #000028;
+    --title-decor-color: #000028;
+    --section-title-color: rgb(255 0 112);
+    --background-image: url(../images/cover-image-dark.png);
+    --primary-color: rgb(255 0 112);
+    --hero-title-color: #db00ff;
+    --text-color: #f1b2ce;
+    --hover-outline-color: rgb(255 0 112 / 0.4);
+    --border-accent-color: rgb(255 0 112);
+    --control-color: rgb(255 0 112);
   }
   .header__recording-label {
     display: block;
